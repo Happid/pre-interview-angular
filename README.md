@@ -1,12 +1,6 @@
 ## pre-interview-angular
 
-### A. TypeScript 🔵
-1. What are Interfaces? 
-2. Different between == vs === ? 
-3. Access modifiers – public, private, protected 
-4. What are Generics?
-
-### B. Fundamental 🟣
+### A. Fundamental 🟣
 1. OOP
 2. How CSS converts to SCSS and benefits of SCSS
 3. Arrow Function vs Class Function
@@ -40,7 +34,7 @@
 - ngAfterViewChecked -> Setelah Angular memeriksa perubahan pada view
 - ngOnDestroy -> Tepat sebelum komponen dihapus dari DOM (Tempat membersihkan subscription, event listener, timer, dsb.)
 
-### C. RxJs and State Management (ngRx) 🟢
+### B. RxJs and State Management (ngRx) 🟢
 1. What's State Management? 
 2. Promise Vs Observable 
 3. tap, subscribe and other general function rxjs! and how to use it? 
@@ -48,7 +42,7 @@
 5. Different BehaviorSubject and Subject
 6. Parent and Child Communication (@Input and @Output) vs NgRx vs Signal
 
-### D. Simple Project 🔴
+### C. Simple Project 🔴
 1. Form Validation (Form Module vs Reactive Form) with unit test
 2. CRUD Employee (pagination, search by, sort) with JWT
 3. Mini Blog (Comment Section, Replay and Other)
