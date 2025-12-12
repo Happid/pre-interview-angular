@@ -1,30 +1,35 @@
 ## pre-interview-angular
 
 ### A. Fundamental 🟣
+
 1. OOP
 2. How CSS converts to SCSS and benefits of SCSS
 3. Arrow Function vs Class Function
-3. What are Lifecycle Hooks (8)? Explain it!
-4. Explain Decorators in Angular
-5. What are Directives? Types of directives? custom directive?
-6. Pipe and Custom Pipe?
-7. What is Dependency Injection? different Injection with injector? How Angular implements it?
-8. What is View Encapsulation? Types?
-9. Explain Angular Routing, Dynamic route, AuthGuard, CanActive & Lazy Loading
-10. What are Interceptors? How do you use JWT Interceptor?
-11. What is one way banding and two way banding?
-12. Different between zone.js and zoneless? Different between using signal or not using signal.
-13. Security on Angular
-  - XSS using DomSanitizer, cth:iFrame (Cross-Site Scripting)
-  - Interceptor Token, Refresh Token, HttpOnly Cookies (Cross-Site Request Forgery)
-  - AuthGuard & RoleGurad
-  - Environment -> menyembunyikan API key atau URL rahasia di file TS
+4. What are Lifecycle Hooks (8)? Explain it!
+5. Explain Decorators in Angular
+6. What are Directives? Types of directives? custom directive?
+7. Pipe and Custom Pipe?
+8. What is Dependency Injection? different Injection with injector? How Angular implements it?
+9. What is View Encapsulation? Types?
+10. Explain Angular Routing, Dynamic route, AuthGuard, CanActive & Lazy Loading
+11. What are Interceptors? How do you use JWT Interceptor?
+12. What is one way banding and two way banding?
+13. Different between zone.js and zoneless? Different between using signal or not using signal.
+14. Security on Angular
+
+- XSS using DomSanitizer, cth:iFrame (Cross-Site Scripting)
+- Interceptor Token, Refresh Token, HttpOnly Cookies (Cross-Site Request Forgery)
+- AuthGuard & RoleGurad
+- Environment -> menyembunyikan API key atau URL rahasia di file TS
+
 14. Import angular (ECMAScript Modules), express (CommonJS System) DONE
+
 - ESM => import { Component } from '@angular/core' dan export class
 - CJS => const express = require('express') dan export.module
 
-**
+\*\*
 8 Lifecycle Hook di Angular
+
 - ngOnChanges -> Hanya dipanggil jika komponen punya @Input()
 - ngOnInit -> Setup awal, Tempat paling umum untuk inisialisasi logika (misal: panggil API, set variabel awal).
 - ngDoCheck -> Dipakai jika ingin deteksi perubahan manual (Custom change detection)
@@ -35,6 +40,7 @@
 - ngOnDestroy -> Tepat sebelum komponen dihapus dari DOM (Tempat membersihkan subscription, event listener, timer, dsb.)
 
 ### B. RxJs and State Management (ngRx) 🟢
+
 1. What's State Management?
 2. Promise Vs Observable
 3. tap, subscribe and other general function rxjs! and how to use it?
