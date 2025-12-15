@@ -52,3 +52,9 @@
 6. Parent and Child Communication (@Input and @Output) vs NgRx vs Signal
 
 ### C. Simple Project 🔴
+
+1. Form Validation and Unit Test (Form Modules vs Reactive Form)
+2. Looping Reusable Card (parent child communication)
+3. CRUD Employee (Search By, Sort By, Pagination)
+4. SEO and Translate Language
+5. Upload Excel, Image, and Implement Service Worker
