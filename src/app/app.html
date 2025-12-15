@@ -1,2 +1,59 @@
-<h1 class="text-3xl font-bold underline text-red-500">Hello world!</h1>
+<h3 class="font-bold">Pipe</h3>
+<p>mengubah (transform) data sebelum ditampilkan di template / html</p>
+
+<ul>
+  <li class="mt-2">
+    <b>1. titlecase: </b>
+    {{"ini title case" | titlecase}}
+  </li>
+  <li class="mt-2">
+    <b>2. uppercase: </b>
+    {{"ini upper case" | uppercase}}
+  </li>
+  <li class="mt-2">
+    <b>3. lowecase: </b>
+    {{"INI LOWER case" | lowercase}}
+  </li>
+  <li class="mt-2">
+    <b>4. date: </b>
+    {{tempDate | date:'fullDate'}}
+  </li>
+  <li class="mt-2">
+    <b>5. percent: </b>
+    {{ 0.259 | percent }}
+  </li>
+  <li class="mt-2">
+    <b>6. decimal: </b>
+    {{ 3.1415 | number }}
+  </li>
+  <li class="mt-2">
+    <b>7. currency: </b>
+    {{ 19800 | currency:'IDR ' : 'symbol' : '4.2-2' }}
+  </li>
+  <li class="mt-2">
+    <b>8. async: </b>
+    @for (pizza of pizzas$ | async; track pizza.id) {
+      <p>{{pizza.name}} {{pizza.price | currency}}</p>
+    }
+  </li>
+  <li class="mt-2">
+    <b>9. slice: </b>
+    @for (pizza of pizzas$ | async | slice:1:2; track pizza.id) {
+      <p>{{pizza.name}} {{pizza.price | currency}}</p>
+    }
+  </li>
+  <li class="mt-2">
+    <b>10. json: </b>
+    <pre>{{tempObject | json}}</pre>
+  </li>
+  <li class="mt-2">
+    <b>11. keyValue: </b>
+    {{tempObject.baz}}
+  </li>
+  <li class="mt-2">
+    <b>12. custom pipe: </b>
+    <div>Truncate: {{"AbcdefghijklmnopqrstuvwxyzAbcdefghijklmnopqrstuvwxyzAbcdefghijklmnopqrstuvwxyz" | truncate}}</div>
+    <div>Empty Value: {{"" | empty}}</div>
+  </li>
+</ul>
 <router-outlet />
