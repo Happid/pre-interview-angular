@@ -1,51 +1,59 @@
-## pre-interview-angular
+# PreInverviewAngular
 
-### A. Fundamental 🟣
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.10.
 
-1. OOP
-2. How CSS converts to SCSS and benefits of SCSS
-3. Arrow Function vs Class Function
-4. What are Lifecycle Hooks (8)? Explain it!
-5. Explain Decorators in Angular
-6. What are Directives? Types of directives? custom directive?
-7. Pipe and Custom Pipe?
-8. What is Dependency Injection? different Injection with injector? How Angular implements it?
-9. What is View Encapsulation? Types?
-10. Explain Angular Routing, Dynamic route, AuthGuard, CanActive & Lazy Loading
-11. What are Interceptors? How do you use JWT Interceptor?
-12. What is one way banding and two way banding?
-13. Different between zone.js and zoneless? Different between using signal or not using signal.
-14. Security on Angular
+## Development server
 
-- XSS using DomSanitizer, cth:iFrame (Cross-Site Scripting)
-- Interceptor Token, Refresh Token, HttpOnly Cookies (Cross-Site Request Forgery)
-- AuthGuard & RoleGurad
-- Environment -> menyembunyikan API key atau URL rahasia di file TS
+To start a local development server, run:
 
-14. Import angular (ECMAScript Modules), express (CommonJS System) DONE
+```bash
+ng serve
+```
 
-- ESM => import { Component } from '@angular/core' dan export class
-- CJS => const express = require('express') dan export.module
+Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-\*\*
-8 Lifecycle Hook di Angular
+## Code scaffolding
 
-- ngOnChanges -> Hanya dipanggil jika komponen punya @Input()
-- ngOnInit -> Setup awal, Tempat paling umum untuk inisialisasi logika (misal: panggil API, set variabel awal).
-- ngDoCheck -> Dipakai jika ingin deteksi perubahan manual (Custom change detection)
-- ngAfterContentInit -> Hanya dipanggil sekali (Inisialisasi konten <ng-content>)
-- ngAfterContentChecked -> Validasi konten (Setelah Angular memeriksa perubahan pada konten <ng-content>)
-- ngAfterViewInit -> Setelah view dan child view selesai di-render di DOM (Aman untuk mengakses @ViewChild)
-- ngAfterViewChecked -> Setelah Angular memeriksa perubahan pada view
-- ngOnDestroy -> Tepat sebelum komponen dihapus dari DOM (Tempat membersihkan subscription, event listener, timer, dsb.)
+Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
-### B. RxJs and State Management (ngRx) 🟢
+```bash
+ng generate component component-name
+```
 
-1. What's State Management?
-2. Promise Vs Observable
-3. tap, subscribe and other general function rxjs! and how to use it?
-4. When must use async/await vs subscribe?
-5. Different BehaviorSubject and Subject
-6. Parent and Child Communication (@Input and @Output) vs NgRx vs Signal
+For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-### C. Simple Project 🔴
+```bash
+ng generate --help
+```
+
+## Building
+
+To build the project run:
+
+```bash
+ng build
+```
+
+This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+
+## Running unit tests
+
+To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+
+```bash
+ng test
+```
+
+## Running end-to-end tests
+
+For end-to-end (e2e) testing, run:
+
+```bash
+ng e2e
+```
+
+Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+
+## Additional Resources
+
+For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
