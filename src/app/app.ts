@@ -8,6 +8,14 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.css',
 })
 export class App {
-  protected readonly title = signal('pre-interview-angular');
-  x = 's';
+  name = 'Happid';
+
+  sayHello() {
+    console.log("class function", this.name);
+  }
+
+  sayHi = () => {
+    console.log("arrow function", this.name);
+  };
+  protected readonly setTimeout = setTimeout;
 }
