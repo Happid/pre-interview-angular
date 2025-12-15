@@ -6,6 +6,15 @@
 2. How CSS converts to SCSS and benefits of SCSS
 3. Arrow Function vs Class Function
 4. What are Lifecycle Hooks (8)? Explain it!
+- ngOnChanges -> Hanya dipanggil jika komponen punya @Input()
+- ngOnInit -> Setup awal, Tempat paling umum untuk inisialisasi logika (misal: panggil API, set variabel awal).
+- ngDoCheck -> Dipakai jika ingin deteksi perubahan manual (Custom change detection)
+- ngAfterContentInit -> Hanya dipanggil sekali (Inisialisasi konten <ng-content>)
+- ngAfterContentChecked -> Validasi konten (Setelah Angular memeriksa perubahan pada konten <ng-content>)
+- ngAfterViewInit -> Setelah view dan child view selesai di-render di DOM (Aman untuk mengakses @ViewChild)
+- ngAfterViewChecked -> Setelah Angular memeriksa perubahan pada view
+- ngOnDestroy -> Tepat sebelum komponen dihapus dari DOM (Tempat membersihkan subscription, event listener, timer, dsb.)
+
 5. Explain Decorators in Angular
 6. What are Directives? Types of directives? custom directive?
 7. Pipe and Custom Pipe?
@@ -26,18 +35,6 @@
 
 - ESM => import { Component } from '@angular/core' dan export class
 - CJS => const express = require('express') dan export.module
-
-\*\*
-8 Lifecycle Hook di Angular
-
-- ngOnChanges -> Hanya dipanggil jika komponen punya @Input()
-- ngOnInit -> Setup awal, Tempat paling umum untuk inisialisasi logika (misal: panggil API, set variabel awal).
-- ngDoCheck -> Dipakai jika ingin deteksi perubahan manual (Custom change detection)
-- ngAfterContentInit -> Hanya dipanggil sekali (Inisialisasi konten <ng-content>)
-- ngAfterContentChecked -> Validasi konten (Setelah Angular memeriksa perubahan pada konten <ng-content>)
-- ngAfterViewInit -> Setelah view dan child view selesai di-render di DOM (Aman untuk mengakses @ViewChild)
-- ngAfterViewChecked -> Setelah Angular memeriksa perubahan pada view
-- ngOnDestroy -> Tepat sebelum komponen dihapus dari DOM (Tempat membersihkan subscription, event listener, timer, dsb.)
 
 ### B. RxJs and State Management (ngRx) 🟢
 
