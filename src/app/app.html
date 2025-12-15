@@ -1,2 +1,19 @@
-<h1 class="text-3xl font-bold underline text-red-500">Hello world!</h1>
+<h3 class="font-bold">View Encapsulation</h3>
+
+<p class="mb-5">
+  membatasi scope CSS sebuah component,
+  agar style component tidak mempengaruhi component lain
+</p>
+
+<b>3 tipe View Encapsulation: </b>
+<ul class="mb-5">
+  <li>1. Emulated (sangat ter-isolasi, default angular)</li>
+  <li>2. None (CSS bersifat global & tdk ada isolasi)</li>
+  <li>3. ShadowDom (membaca global css namun css tetap terisolasi)</li>
+</ul>
+
+<b>Contoh: </b>
+<app-red-button class="mr-4"/>
+<app-blue-button/>
+
 <router-outlet />
