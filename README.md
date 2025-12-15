@@ -16,6 +16,12 @@
 - ngOnDestroy -> Tepat sebelum komponen dihapus dari DOM (Tempat membersihkan subscription, event listener, timer, dsb.)
 
 5. Explain Decorators in Angular
+- Decorator adalah fungsi khusus (metadata) yang memberi tahu Angular bagaimana sebuah class diperlakukan (component? service? module? input / output?)
+- Class Decorator => @Component, @Directive, @Pipe, @Injectable
+- Property Decorator => @Input(), @Output(), @ViewChild()
+- Method Decorator => @HostListener()
+- Parameter Decorator => @Inject()
+
 6. What are Directives? Types of directives? custom directive?
 7. Pipe and Custom Pipe?
 8. What is Dependency Injection? different Injection with injector? How Angular implements it?
