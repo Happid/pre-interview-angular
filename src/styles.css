@@ -1,2 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'tailwindcss';
+
+.btn-primary {
+  @apply cursor-pointer bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-blue-700 transition duration-300;
+}
+.btn-warning {
+  @apply cursor-pointer bg-yellow-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-yellow-700 transition duration-300;
+}

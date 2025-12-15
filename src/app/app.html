@@ -1,4 +1,14 @@
-<h1 class="text-3xl font-bold underline text-red-500">
-  Hello OOP!
-</h1>
+<button class="btn-primary" (click)="pilihBensin()">Mobil Bensin</button>
+<button class="btn-warning" (click)="pilihListrik()">Mobil Listrik</button>
+<br/>
+<p>{{ pesan }}</p>
+
+<button class="btn-primary mt-10 mr-5" (click)="gas()">Gas</button>
+<button class="btn-primary" (click)="rem()">Rem</button>
+
+<p>
+  Kecepatan:
+  {{ mobilService.getKecepatan() }} km/jam
+</p>
+
 <router-outlet />
