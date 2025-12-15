@@ -1,2 +1,49 @@
-<h1 class="text-3xl font-bold underline text-red-500">Hello world!</h1>
+<h3 class="font-bold">Directive</h3>
+<p class="mb-2">class di Angular yang digunakan untuk memanipulasi DOM</p>
+<ul class="mb-5">
+  <li>1. Component Directive</li>
+  <li>2. Structural Directive</li>
+  <li>3. Attribute Directive</li>
+  <li>4. Custom Directive</li>
+</ul>
+
+<!-- STRUCTURAL DIRECTIVE -->
+<b>Structural Directive</b>
+@if (true) {
+  <p> A. Ini Directive <b>{{"@if"}}</b></p>
+}
+
+<p> B. Ini Directive <b>{{"@switch"}}</b></p>
+@switch (true){
+  @case (tempSwitchCase.case1){
+    <p> switch case ke-1 </p>
+  }
+  @case (tempSwitchCase.case2){
+    <p> switch case ke-2 </p>
+  }
+  @default {
+    <p> ini switch defaultnya </p>
+  }
+}
+
+<p> B. Ini Directive Loop <b>{{"@for"}}</b></p>
+@for ( item of tempArray; track $index) {
+  <p>ke-{{item}}</p>
+}
+
+
+<!-- STRUCTURAL DIRECTIVE -->
+<div class="mt-5"></div>
+<b>Attribute Directive</b>
+<div [ngClass]="sukses ? 'text-green-500' : 'text-red-500'">Menggunakan NgClass</div>
+<p [ngStyle]="{ 'color': sukses ? '#10b981' : '#ef4444' }">Menggunakan NgStyle</p>
+
+
+<!-- CUSTOM DIRECTIVE -->
+<div class="mt-5"></div>
+<b>Custom Directive</b>
+<p appHighlight>
+  Arahkan mouse ke sini
+</p>
+
 <router-outlet />

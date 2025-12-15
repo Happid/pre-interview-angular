@@ -1,13 +1,20 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { Highlight } from './custom-directive/highlight';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, CommonModule, Highlight],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
 export class App {
-  protected readonly title = signal('pre-interview-angular');
-  x = 's';
+  tempArray = [1, 2];
+  tempSwitchCase = {
+    case1: true,
+    case2: false,
+  };
+
+  sukses: boolean = true;
 }
