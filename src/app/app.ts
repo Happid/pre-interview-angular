@@ -8,6 +8,22 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.css',
 })
 export class App {
-  protected readonly title = signal('pre-interview-angular');
-  x = 's';
+
+  codeExample = `
+    //ts
+    import { FormsModule } from '@angular/forms';
+
+    @NgModule({
+      imports: [FormsModule]
+    })
+    export class AppModule {
+      name = '';
+    }
+
+    // html
+    <input type="text" [(ngModel)]="name">
+    <p>Nama: {{ name }}</p>
+  `;
+
+
 }

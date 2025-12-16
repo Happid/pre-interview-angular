@@ -1,2 +1,62 @@
-<h1 class="text-3xl font-bold underline text-red-500">Hello world!</h1>
-<router-outlet />
+<div class="container mx-auto">
+  <h3 class="font-bold">12. Data Binding</h3>
+  <p class="mb-5">menghubungkan data (component) dengan tampilan (template HTML)</p>
+
+  <ul>
+    <li>
+      <b>1. One-Way Binding</b>
+    </li>
+    <li>
+      A. Interpolation {{" {{ }} "}}
+      <pre class="bg-gray-100 text-sm pt-2">
+        <code>
+          // ts
+          title = 'Halo Angular';
+
+          // html
+          {{"{{title}}"}}
+        </code>
+      </pre>
+    </li>
+    <li>
+      B. Property Binding [property]
+      <pre class="bg-gray-100 text-sm pt-2">
+        <code>
+          // ts
+          isDisabled = true;
+
+          // html
+          <{{"button"}} {{"[disabled]=\"isDisabled\""}}>
+            Submit
+          <{{"/button"}}>
+        </code>
+      </pre>
+    </li>
+    <li>
+      C. Event Binding (event)
+      <pre class="bg-gray-100 text-sm pt-2">
+        <code>
+          // ts
+          {{"onClick() { "}}
+          {{" console.log('Button diklik'); "}}
+          {{"}"}}
+
+          // html
+          <{{"button"}} {{"(click)=\"handleClick()\""}}>
+            Click Me
+          <{{"/button"}}>
+        </code>
+      </pre>
+    </li>
+    <li>
+      <b>2. Two-Way Binding</b>
+      <pre class="bg-gray-100 text-sm pt-2">
+        <code>
+          {{codeExample}}
+        </code>
+      </pre>
+    </li>
+  </ul>
+
+  <router-outlet />
+</div>
