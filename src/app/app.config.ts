@@ -6,11 +6,19 @@ import {
 import { provideRouter } from '@angular/router';
 
 import { routes } from './app.routes';
+import { HTTP_INTERCEPTORS, provideHttpClient } from '@angular/common/http';
+import { AuthLsInterceptor } from './middleware/auth-ls-interceptor';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),
+    provideHttpClient(),
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthLsInterceptor,
+      multi: true
+    }
   ],
 };
