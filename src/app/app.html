@@ -1,2 +1,20 @@
-<h1 class="text-3xl font-bold underline text-red-500">Hello world!</h1>
-<router-outlet />
+<div class="container mx-auto">
+  <h3 class="font-bold">13. Zone vs Zoneless</h3>
+  <p>zone.js adalah library yang memonitor (async task) seperti: setTimeout, Promise, fetch / XMLHttpRequest, event DOM (input, click)</p>
+
+  <h3>1. Zone.js</h3>
+  <pre class="bg-gray-100">
+    <code>{{code1}}</code>
+  </pre>
+
+  <h3>2. Zoneless</h3>
+  <pre class="bg-gray-100">
+    <code>{{code2}}</code>
+  </pre>
+
+  <h3>3. Zoneless + Signal</h3>
+  <pre class="bg-gray-100">
+    <code>{{code3}}</code>
+  </pre>
+  <router-outlet />
+</div>
