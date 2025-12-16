@@ -44,7 +44,7 @@
 
 ### B. RxJs and State Management (ngRx) 🟢
 
-1. What's State Management?
+1. What's State Management? mengelola, menyimpan, dan mendistribusikan data (state) agar konsisten di seluruh aplikasi. Menghindari (Prop Drilling)
 2. Promise Vs Observable
 3. tap, subscribe and other general function rxjs! and how to use it?
 4. When must use async/await vs subscribe?
